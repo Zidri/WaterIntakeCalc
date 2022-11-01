@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/046dd30d2f.js" crossorigin="anonymous"></script>
+    <title id="title">Water Intake Calculator</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="header" id="header">
+        <h1>Water Intake Calculator</h1>
+    </div>
+    <div class="container">
+
+        <div class="circle">
+            <div class="water" id="waterDisplay">
+                0 oz/day
+            </div>
+            <div class="valueInput" id="valueInput">
+                <label for="weight">Weight:</label>
+                <input name="weight" class="weight" id="weight" type="number" min="0" value="0">                
+                <select id="weightMeasure">
+                    <option value="lbs">lbs</option>
+                    <option value="kg">kg</option>
+                </select>
+                <br>
+                <label for="activity">Activity:</label>
+                <input name="activity" id="activity" type="number" min="0" value="0"> 
+                mins/day
+            </div>
+        </div>
+
+        
+
+        <div class="buttonDisplay">
+            <button class="btn" id="toggle" onclick="CalcWaterIntake()">Calculate</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
